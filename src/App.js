@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Mail from './Mail';
 import EmailList from './EmailList';
