@@ -27,3 +27,34 @@
     color: whitesmoke;
     font-size: 13px;
 }
+
+.sendMail__options > .MuiButtonBase-root {
+    color: #f8f8f8 !important;
+}
+
+.sendMail__send > .MuiButtonBase-root {
+    text-transform: capitalize !important;
+}
+
+.sendMail__send{
+    background-color: #3079ed !important;
+    margin: 15px !important;
+}
+
+.sendMail__close{
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    padding: 10px;
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 5px;
+    outline: none;
+}

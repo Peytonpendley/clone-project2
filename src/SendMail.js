@@ -11,12 +11,17 @@ function SendMail() {
                 <CloseIcon className="sendMail__close"/>
             </div>
             <form>
-                <input type="" />
-                <input type="" />
-                <input type="" />
+                <input placeholder="To" type="" />
+                <input placeholder="Subject" type="" />
+                <input placeholder="Message..." type="" />
 
                 <div className="sendMail__options">
-                    <Button className="sendMail__send">Send</Button>
+                    <Button 
+                    className="sendMail__send"
+                    varient="contained"
+                    color='primary'
+                    type="submit"
+                    >Send</Button>
                 </div>
             </form>
         </div>
