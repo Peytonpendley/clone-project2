@@ -4,6 +4,7 @@
     height: 50px;
     border-bottom: 1px solid whitesmoke;
     cursor: pointer;
+    overflow: visible;
 }
 
 .emailRow:hover {
