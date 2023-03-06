@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useForm } from "react-hook-form";
 
 function SendMail() {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, watch, formState: {errors} } = useForm();
   const onSubmit = (data) => {
     console.log(data)
   }
@@ -22,19 +22,19 @@ function SendMail() {
           type="email"
           {...register("to", { required: true })}
         />
-        {errors?.to && <p className="senMail__error">To is Required!</p>}
+        {errors.to && <p className="senMail__error">To is required!</p>}
         <input
           placeholder="Subject"
           type="text"
           {...register("subject", { required: true })}
         />
-        <div className="sendMail__message">
+        {errors.subject && <p className="senMail__error">Subject is required!</p>}
         <input
           placeholder="Message..."
           type="text"
           {...register("message", { required: true })}
         />
-        </div>
+        {errors.message && <p className="sendMail__error">Message is required!</p>}
         <div className="sendMail__options">
           <Button
             className="sendMail__send"

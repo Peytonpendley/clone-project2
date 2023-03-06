@@ -40,6 +40,10 @@
     margin-left: 20px;
 }
 
+.mail__bodyHeader{
+    position: relative;
+}
+
 .mail__important{
     color: #e8ab02 !important;
 }
