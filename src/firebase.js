@@ -1,5 +1,7 @@
-import firebase from 'firebase'
-//you could be more specific and put `import { initializeApp } from 'firebase/app';` but either is fine
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth'
+//you could be more specific and put `import { initializeApp } from 'firebase/compat/app';` but either is fine
 
 const firebaseConfig = {
     apiKey: "AIzaSyAdN6QpQGR3Ldc6ev6AeTOoFpD0kJ6OhqE",
@@ -20,7 +22,7 @@ const db = firebaseApp.firestore()
 //initialises the authentication service for us. we use the auth constant every time we want to sigin up, login, or log out
 const auth = firebase.auth()
 
-//now we can sign people in and out of google `GoogleAuthProvider` allows us to sign people in and out of google
+//now we can sign people in and out THROUGH google `GoogleAuthProvider` allows us to sign people in and out THROUGH google
 const provider = new firebase.auth.GoogleAuthProvider()
 
 export { db, auth, provider }

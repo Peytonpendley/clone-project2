@@ -13,13 +13,10 @@ import PeopleIcon from '@mui/icons-material/People';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import Section from "./Section";
 import EmailRow from "./EmailRow";
-import { useNavigate } from "react-router-dom";
 
 function EmailList() {
-    const navigate = useNavigate();
-
   return (
-    <div onClick={() => navigate(`/mail`)} className="emailList">
+    <div className="emailList">
       <div className="emailList__header">
         <div className="emailList__headerLeft">
           <IconButton>
