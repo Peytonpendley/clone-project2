@@ -53,7 +53,7 @@ function EmailList() {
           <Section Icon={LocalOfferIcon} title='Promotions' color='green' />
         </div>
         <div className="emailList__list">
-            <EmailRow title='Twitch' subject='hey fellow streamer!!!' description='this is a test' time='10:10 am' />
+            <EmailRow title='Twitch' subject='hey fellow streamer!!! What is going on man!!!' description='this is a test' time='10:10 am' />
             <EmailRow title='Twitch' subject='hey fellow streamer!!!' description='this is a test' time='10:10 am' />
             <EmailRow title='Twitch' subject='hey fellow streamer!!!' description='this is a test' time='10:10 am' />
         </div>
